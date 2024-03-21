@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Data Collection Page.css') }}">
+</head>
+
+<body>
+    <div class="index">
+        <h1>Questionnaire</h1>
+        <form class="biaodan" method="post"  action="{{ url_for('data') }}">
+            {{ form.hidden_tag() }}
+            <li>{{ form.riqi.label }}</li>
+            <br>
+            {{ form.riqi }}
+            <br>
+            <br>
+            <br>
+            {{ form.first_name.label }}: {{ form.first_name }}
+            <br>
+            <br>
+            <br>
+            {{ form.last_name.label }}: {{ form.last_name }}
+            <br>
+            <br>
+            <br>
+            {{ form.student_number.label }}: {{ form.student_number }}
+            <br><br>
+            <br>
+            {{ form.email.label }}: {{ form.email }}
+            <br>
+            <br>
+            <br>
+            {{ form.grade.label }}: {{ form.grade }}
+            <br><br>
+            <b>{{ form.satisfaction.label }}:</b> {{ form.satisfaction }}
+            <br><br>
+            <br>
+            <b>{{ form.difficulty.label }}:</b> {{ form.difficulty() }}
+                         <b>Expected course period(multiple choice):</b><br>
+<br>
+
+{% for checkbox in form.time_periods %}
+    <label>
+        {{ checkbox() }} {{ checkbox.label.text }}
+    </label><br>
+{% endfor %}
+            <!-- 以下多选框的 WTForms 实现需要自定义处理，因为 WTForms 不直接支持多选框 -->
+
+            <br>
+            <li>{{ form.recommendations.label }}</li>
+            <br>
+            {{ form.recommendations }}
+
+
+
+
+
+
+
+
+            <br>
+            {{ form.submit }}
+        </form>
+    </div>
+</body>
+</html>
