@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 确保正确引用了 CSS 文件 -->
+
 <link rel="stylesheet" href="{{ url_for('static', filename='Welcome page.css') }}">
     <meta charset="UTF-8">
     <title>Welcome page</title>
@@ -10,7 +10,7 @@
     <table bgcolor="rgb(173, 216, 50)">
         <tr>
             <td> </td>
-<!-- 插入学校徽标和座右铭的占位符 -->
+
             <td><img src="https://img2.baidu.com/it/u=2714564774,2602350720&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=433" alt="" height="170" width="200"></td>
             <td align="left" style="color: aliceblue;"><font size="6">{{ motto }}</font></td>
         </tr>
@@ -19,7 +19,7 @@
     <table>
         <tr>
             <td align="center">
-<!-- 创建链接导航到不同的页面 -->
+
                 <a target="_blank" href="{{ url_for('information') }}">
                     <font size="5">Data collection reason statement</font>
                 </a>
@@ -32,8 +32,7 @@
         </tr>
     </table>
 
-<!-- 插入照片和文本，并确保它们居中。 -->
-<!-- 确保用正确的路径替换了占位符。 -->
+
     <table>
         <tr>
             <td align="left"><img src="https://img1.baidu.com/it/u=1474689451,3881854574&fm=253&fmt=auto&app=138&f=JPEG?w=735&h=500" alt="" height="500" width="700"></td>
@@ -43,8 +42,7 @@
         </tr>
     </table>
 
-<!-- 插入学校历史的照片 -->
-<!-- 确保用正确的路径替换了占位符。 -->
+
     <table>
         <tr>
             <td align="left"><img src="https://inews.gtimg.com/newsapp_bt/0/13656617085/1000" alt="" height="500" width="700"></td>
