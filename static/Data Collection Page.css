@@ -1,0 +1,19 @@
+
+        body {
+            background-color: rgb(173, 216, 230);
+             /* Set the color of background */
+        }
+
+        .index {
+            font-size: 20px;
+            margin: auto;
+            width: 700px;
+            background-color: white;
+            margin-top: 0px;
+        }
+
+        .biaodan {
+            padding-left: 60px;
+            line-height: 100%;
+             /* decorate in form */
+        }

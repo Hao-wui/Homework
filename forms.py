@@ -24,7 +24,7 @@ class QuestionnaireForm(FlaskForm):
         ('Medium', 'Medium'),
         ('Small', 'Small')
     ])
-    # 假设我们添加一个多选框字段
+
     time_periods = SelectMultipleField(
         'Expected course period',
         choices=[('morning', 'Morning'), ('noon', 'Noon'), ('afternoon', 'Afternoon')],

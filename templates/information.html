@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Information Page.css') }}">
+    <meta charset="UTF-8">
+    <title>Information Page: Reasons for Collecting Data on Student Progress at GIC</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+    <div>
+        <td align="left" valign="top" style="margin-left: -20px;">
+<!--            #State the reason for the data collection-->
+            <p class="text">
+                Declaration: {{ declaration }}
+            </p>
+        </td>
+        <h2>Purposes of Data Collection:</h2>
+<!--        # Describe the purpose of data collection-->
+        <ul>
+            {% for purpose in purposes %}
+                <li>{{ purpose }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Benefits of Data Collection:</h2>
+<!--        # Describe the Benefits of data collection-->
+        <ul>
+            {% for benefit in benefits %}
+                <li>{{ benefit }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

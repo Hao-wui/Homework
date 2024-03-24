@@ -9,7 +9,7 @@
 <body>
     <div class="index">
         <h1>Questionnaire</h1>
-        <form class="biaodan" method="post"  action="{{ url_for('data') }}">
+        <form class="biaodan" method="post"  action="{{ url_for('questionnaire') }}">
             {{ form.hidden_tag() }}
             <li>{{ form.riqi.label }}</li>
             <br>
@@ -46,7 +46,6 @@
         {{ checkbox() }} {{ checkbox.label.text }}
     </label><br>
 {% endfor %}
-            <!-- 以下多选框的 WTForms 实现需要自定义处理，因为 WTForms 不直接支持多选框 -->
 
             <br>
             <li>{{ form.recommendations.label }}</li>

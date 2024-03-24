@@ -1,0 +1,17 @@
+        .text {
+            font-size: 30px;
+            line-height: 3;
+            /* set a class for paragraph to use*/
+            }
+
+        body {
+            background-color: rgb(173, 216, 230);
+            /* Set the color of background */
+        }
+
+        table {
+            border: none;
+            border-collapse: collapse;
+            width: 1500px;
+            /*Set the picture text as a whole*/
+        }

@@ -8,7 +8,7 @@
     <h1>Questionnaire</h1>
     <form method="POST" action="{{ url_for('questionnaire') }}">
         {{ form.hidden_tag() }}
-        <p>
+        <p>rq2
             {{ form.riqi.label }}<br>
             {{ form.riqi }}
         </p>
@@ -20,7 +20,7 @@
             {{ form.last_name.label }}<br>
             {{ form.last_name }}
         </p>
-        <!-- 其他字段类似地添加 -->
+
 
         <b>Expected course period(multiple choice):</b><br>
         {% for checkbox in form.time_periods %}

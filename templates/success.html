@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>submit successfully</title>
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+    <h1>submit successfully！</h1>
+    <p>Your form has been successfully submitted</p>
+    <a href="{{ url_for('data') }}">Retest</a>
+    <a href="{{ url_for('welcome') }}">Back to Home page</a>
+</body>
+</html>

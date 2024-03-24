@@ -1,0 +1,23 @@
+
+        body {
+            background-color: rgb(173, 216, 230);
+            /* Set the color of background */
+        }
+
+        td {
+            align: left;
+            color: aliceblue;
+            /* change the text place */
+        }
+
+        .text {
+            font-size: 23px;
+            line-height: 3;
+            /* decorate the paragraph */
+        }
+
+        ul {
+            color: black;
+            font-size: 20px;
+            /* Set the text in ul */
+        }
