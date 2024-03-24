@@ -1,13 +1,2 @@
 
-riqi: 2024-03-01
-first_name: 1
-last_name: 1
-student_number: 1
-email: 1448294017@qq.com
-grade: 1
-satisfaction: Very satisfied
-difficulty: Medium
-time_periods: morning
-recommendations: ok
-submit: True
 
