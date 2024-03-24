@@ -37,7 +37,7 @@ def information():
 @app.route('/data', methods=['GET', 'POST'])
 def data():
     form = QuestionnaireForm()
-    if request.method == 'POST' and form.validate_on_submit():        # 处理表单数据
+    if request.method == 'POST' and form.validate_on_submit():        
         return redirect(url_for('success'))
     return render_template('data.html', form=form)
 
